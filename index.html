@@ -3,129 +3,353 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>DEL MAR TRAVEL — официальный сайт туристической компании</title>
+
+  <title>DEL MAR TRAVEL — туристическая компания в Ташкенте</title>
   <meta name="description" content="ООО DEL MAR TRAVEL — подбор туров, авиабилетов, отелей, трансферов и туристического страхования. Ташкент, Узбекистан." />
+
   <link rel="icon" href="assets/favicon.png" type="image/png" />
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-<header class="site-header">
-  <div class="container header-inner">
-    <a class="brand" href="#home"><img src="assets/logo.png" alt="DEL MAR"><span>TRAVEL</span></a>
+<header class="header">
+  <div class="container header__inner">
+    <a class="logo" href="#home" aria-label="DEL MAR TRAVEL">
+      <img src="assets/logo.png" alt="DEL MAR" />
+      <span>TRAVEL</span>
+    </a>
+
     <nav class="nav">
-      <a href="#home">Главная</a><a href="#about">О компании</a><a href="#destinations">Туры</a><a href="#services">Услуги</a><a href="#license">Лицензия</a><a href="#contacts">Контакты</a>
+      <a href="#home">Главная</a>
+      <a href="#about">О компании</a>
+      <a href="#destinations">Туры</a>
+      <a href="#services">Услуги</a>
+      <a href="#license">Лицензия</a>
+      <a href="#contacts">Контакты</a>
     </nav>
-    <a class="header-cta" href="https://wa.me/998951141761" target="_blank" rel="noopener"><span>Связаться</span></a>
+
+    <a class="header-btn" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+      Связаться с нами
+    </a>
   </div>
 </header>
 
 <main>
-<section id="home" class="hero">
-  <div class="container">
-    <div class="hero-content">
-      <p class="eyebrow">Официальный сайт туристической компании</p>
-      <h1>Путешествия, которые вдохновляют</h1>
-      <p class="hero-text">DEL MAR TRAVEL — ваш надежный партнер в мире путешествий. Подберем тур, авиабилеты, отель, трансфер и туристическое страхование.</p>
-      <div class="hero-actions">
-        <a class="btn btn-primary" href="#request">Подобрать тур</a>
-        <a class="btn btn-light" href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20подобрать%20тур." target="_blank" rel="noopener">Написать в WhatsApp</a>
+  <section id="home" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__content">
+        <h1>Путешествия,<br>которые вдохновляют</h1>
+        <p>DEL MAR TRAVEL — ваш надежный партнер в мире незабываемых путешествий.</p>
+
+        <div class="hero__actions">
+          <a class="btn btn-primary" href="#request">Подобрать тур</a>
+          <a class="btn btn-white" href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20подобрать%20тур." target="_blank" rel="noopener">
+            Написать в WhatsApp
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section class="trust">
-  <div class="container trust-card">
-    <div><strong>Официально</strong><span>ООО DEL MAR TRAVEL</span></div>
-    <div><strong>Поддержка</strong><span>На всех этапах поездки</span></div>
-    <div><strong>Бронирование</strong><span>Туры, отели, билеты</span></div>
-    <div><strong>Контакты</strong><span>WhatsApp и e-mail</span></div>
-  </div>
-</section>
-
-<section id="destinations" class="section">
-  <div class="container">
-    <div class="section-title"><div><p class="eyebrow">Популярные направления</p><h2>Куда можно поехать</h2></div><a class="small-link" href="#request">Подобрать направление →</a></div>
-    <div class="destination-grid">
-      <article class="destination-card"><div class="destination-img img-turkey"></div><div class="destination-body"><h3>Турция</h3><p>Анталия, Белек, Кемер, Сиде и Бодрум.</p></div></article>
-      <article class="destination-card"><div class="destination-img img-egypt"></div><div class="destination-body"><h3>Египет</h3><p>Шарм-эль-Шейх и Хургада.</p></div></article>
-      <article class="destination-card"><div class="destination-img img-maldives"></div><div class="destination-body"><h3>Мальдивы</h3><p>Виллы на воде и острова-курорты.</p></div></article>
-      <article class="destination-card"><div class="destination-img img-thailand"></div><div class="destination-body"><h3>Таиланд</h3><p>Пхукет, Као Лак, Самуи.</p></div></article>
-      <article class="destination-card"><div class="destination-img img-uae"></div><div class="destination-body"><h3>ОАЭ</h3><p>Дубай, Абу-Даби, Рас-эль-Хайма.</p></div></article>
-      <article class="destination-card"><div class="destination-img img-vietnam"></div><div class="destination-body"><h3>Вьетнам</h3><p>Фукуок, Нячанг, Камрань.</p></div></article>
+  <section class="benefits">
+    <div class="container benefits__card">
+      <div class="benefit">
+        <div class="benefit__icon">✓</div>
+        <div>
+          <h3>Официально</h3>
+          <p>ООО DEL MAR TRAVEL</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">☎</div>
+        <div>
+          <h3>Поддержка</h3>
+          <p>На всех этапах поездки</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">★</div>
+        <div>
+          <h3>Подбор</h3>
+          <p>Туры, отели, билеты</p>
+        </div>
+      </div>
+      <div class="benefit">
+        <div class="benefit__icon">☏</div>
+        <div>
+          <h3>Контакты</h3>
+          <p>WhatsApp и e-mail</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="offers" class="section soft-section">
-  <div class="container">
-    <div class="section-title"><div><p class="eyebrow">Спецпредложения</p><h2>Подбор популярных отелей</h2></div><a class="small-link" href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20туру." target="_blank" rel="noopener">Получить предложение →</a></div>
-    <div class="offer-grid">
-      <article class="offer-card"><div class="offer-img offer-1"></div><div class="offer-content"><h3>Rixos Premium Belek 5*</h3><p>Белек, Турция</p><span>Ultra All Inclusive</span><a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20Rixos%20Premium%20Belek" target="_blank" rel="noopener">Запросить</a></div></article>
-      <article class="offer-card"><div class="offer-img offer-2"></div><div class="offer-content"><h3>Rixos Radamis Sharm 5*</h3><p>Шарм-эль-Шейх, Египет</p><span>Ultra All Inclusive</span><a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20Rixos%20Radamis%20Sharm" target="_blank" rel="noopener">Запросить</a></div></article>
-      <article class="offer-card"><div class="offer-img offer-3"></div><div class="offer-content"><h3>Hard Rock Maldives 5*</h3><p>Мальдивы</p><span>Premium Resort</span><a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20Hard%20Rock%20Maldives" target="_blank" rel="noopener">Запросить</a></div></article>
-      <article class="offer-card"><div class="offer-img offer-4"></div><div class="offer-content"><h3>Katathani Phuket 5*</h3><p>Пхукет, Таиланд</p><span>Beach Resort</span><a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20Katathani%20Phuket" target="_blank" rel="noopener">Запросить</a></div></article>
+  <section id="destinations" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="wave"></span>
+          <h2>Популярные направления</h2>
+        </div>
+        <a href="#request">Смотреть все туры →</a>
+      </div>
+
+      <div class="destination-grid">
+        <article class="destination-card">
+          <div class="destination-card__image img-turkey"></div>
+          <div class="destination-card__body">
+            <h3>Турция</h3>
+            <p>Премиальные и семейные отели Анталии, Белека, Кемера, Сиде и Бодрума.</p>
+            <a href="#request">Получить предложение →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <div class="destination-card__image img-egypt"></div>
+          <div class="destination-card__body">
+            <h3>Египет</h3>
+            <p>Лучшие курорты Шарм-эль-Шейха и Хургады, Красное море и комфортный отдых.</p>
+            <a href="#request">Получить предложение →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <div class="destination-card__image img-uae"></div>
+          <div class="destination-card__body">
+            <h3>ОАЭ</h3>
+            <p>Дубай, Абу-Даби, Рас-эль-Хайма: отели, шопинг и пляжный отдых.</p>
+            <a href="#request">Получить предложение →</a>
+          </div>
+        </article>
+
+        <article class="destination-card">
+          <div class="destination-card__image img-maldives"></div>
+          <div class="destination-card__body">
+            <h3>Мальдивы</h3>
+            <p>Виллы на воде, острова-курорты и премиальный отдых у океана.</p>
+            <a href="#request">Получить предложение →</a>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="services" class="section">
-  <div class="container split">
-    <div><p class="eyebrow">Почему выбирают нас</p><h2>Комфортная организация поездки</h2><p class="lead">Мы помогаем клиентам подобрать подходящий отдых и сопровождаем на всех этапах путешествия.</p></div>
-    <div class="feature-grid">
-      <div>Индивидуальный подбор туров</div><div>Проверенные туроператоры и отели</div><div>Бронирование авиабилетов</div><div>Организация трансферов</div><div>Туристическое страхование</div><div>Консультации по путешествиям</div>
+  <section id="offers" class="section section-light">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="wave"></span>
+          <h2>Спецпредложения</h2>
+        </div>
+        <a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20туру." target="_blank" rel="noopener">Запросить подбор →</a>
+      </div>
+
+      <div class="tour-grid">
+        <article class="tour-card">
+          <div class="tour-card__image tour-1"></div>
+          <div class="tour-card__body">
+            <h3>Rixos Premium Belek 5*</h3>
+            <p>Белек, Турция</p>
+            <span>Ultra All Inclusive</span>
+            <a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20Rixos%20Premium%20Belek%205*" target="_blank" rel="noopener">Запросить →</a>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-card__image tour-2"></div>
+          <div class="tour-card__body">
+            <h3>Rixos Radamis Sharm 5*</h3>
+            <p>Шарм-эль-Шейх, Египет</p>
+            <span>Ultra All Inclusive</span>
+            <a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20Rixos%20Radamis%20Sharm%205*" target="_blank" rel="noopener">Запросить →</a>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-card__image tour-3"></div>
+          <div class="tour-card__body">
+            <h3>Hard Rock Maldives 5*</h3>
+            <p>Мальдивы</p>
+            <span>Premium Resort</span>
+            <a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20Hard%20Rock%20Maldives%205*" target="_blank" rel="noopener">Запросить →</a>
+          </div>
+        </article>
+
+        <article class="tour-card">
+          <div class="tour-card__image tour-4"></div>
+          <div class="tour-card__body">
+            <h3>Katathani Phuket 5*</h3>
+            <p>Пхукет, Таиланд</p>
+            <span>Beach Resort</span>
+            <a href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20получить%20предложение%20по%20Katathani%20Phuket%205*" target="_blank" rel="noopener">Запросить →</a>
+          </div>
+        </article>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="clients" class="section dark-section">
-  <div class="container">
-    <div class="section-title light-title"><div><p class="eyebrow">Информация для клиентов</p><h2>Порядок оказания услуг</h2></div></div>
-    <div class="steps-grid">
-      <article><b>01</b><h3>Обращение</h3><p>Клиент обращается по телефону, WhatsApp, e-mail или через форму на сайте.</p></article>
-      <article><b>02</b><h3>Подбор</h3><p>Менеджер уточняет даты, направление, бюджет и пожелания по отдыху.</p></article>
-      <article><b>03</b><h3>Бронирование</h3><p>После согласования клиенту предоставляется информация о туре и условиях.</p></article>
-      <article><b>04</b><h3>Оплата и поддержка</h3><p>Порядок оплаты, отмены и возврата определяется условиями выбранного продукта и договора.</p></article>
+  <section id="services" class="section">
+    <div class="container">
+      <div class="section-head">
+        <div>
+          <span class="wave"></span>
+          <h2>Почему выбирают нас?</h2>
+        </div>
+      </div>
+
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-card__icon">👥</div>
+          <h3>Индивидуальный подход</h3>
+          <p>Подберем тур под ваши даты, бюджет и пожелания.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🏷</div>
+          <h3>Проверенные партнеры</h3>
+          <p>Работаем с надежными туроператорами и отелями.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🛡</div>
+          <h3>Поддержка туристов</h3>
+          <p>Консультации и сопровождение на всех этапах поездки.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-card__icon">🌍</div>
+          <h3>Большой выбор</h3>
+          <p>Турция, Египет, ОАЭ, Таиланд, Мальдивы, Вьетнам.</p>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<section id="about" class="section">
-  <div class="container split">
-    <div><p class="eyebrow">О компании</p><h2>ООО DEL MAR TRAVEL</h2><p class="lead">DEL MAR TRAVEL — туристическая компания, специализирующаяся на организации выездного туризма.</p><p>Компания оказывает услуги по подбору туристических туров, бронированию гостиниц, авиабилетов, организации трансферов, оформлению страховых полисов и консультациям по вопросам путешествий.</p><p>Наша задача — обеспечить клиентам комфортный, безопасный и качественный отдых.</p></div>
-    <div class="requisites"><h3>Реквизиты компании</h3><dl><dt>Полное наименование</dt><dd>ООО DEL MAR TRAVEL</dd><dt>Директор</dt><dd>Rashidova Xamida</dd><dt>ИНН</dt><dd>313076261</dd><dt>Юридический адрес</dt><dd>г. Ташкент, Бектемирский район, МФЙ Zilola, ул. Рохат, дом 83</dd><dt>Адрес на узбекском языке</dt><dd>Toshkent shahri, Bektemir tumani, Zilola MFY, Roxat ko‘chasi, 83-uy</dd></dl></div>
-  </div>
-</section>
+  <section id="clients" class="section section-blue">
+    <div class="container">
+      <div class="section-head section-head-white">
+        <div>
+          <span class="wave wave-light"></span>
+          <h2>Информация для клиентов</h2>
+        </div>
+      </div>
 
-<section id="license" class="section soft-section">
-  <div class="container license-box"><p class="eyebrow">Лицензия</p><h2>Информация о лицензии</h2><p>Информация о лицензии на осуществление турагентской деятельности будет размещена после получения лицензии в установленном законодательством Республики Узбекистан порядке.</p></div>
-</section>
+      <div class="steps">
+        <article><b>01</b><h3>Обращение</h3><p>Клиент обращается по телефону, WhatsApp, e-mail или через форму заявки.</p></article>
+        <article><b>02</b><h3>Подбор тура</h3><p>Менеджер уточняет даты, направление, количество туристов, бюджет и пожелания.</p></article>
+        <article><b>03</b><h3>Бронирование</h3><p>После согласования предоставляется информация о туре, отеле, перелете и трансфере.</p></article>
+        <article><b>04</b><h3>Оплата и возврат</h3><p>Порядок оплаты, отмены и возврата зависит от условий выбранного туристического продукта.</p></article>
+      </div>
+    </div>
+  </section>
 
-<section id="request" class="section">
-  <div class="container request-grid">
-    <div><p class="eyebrow">Заявка</p><h2>Подобрать тур</h2><p class="lead">Оставьте заявку или напишите в WhatsApp — менеджер свяжется с вами и предложит подходящие варианты.</p><a class="btn btn-primary" href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20подобрать%20тур." target="_blank" rel="noopener">Написать в WhatsApp</a></div>
-    <form class="request-form" action="mailto:delmartraveluz@gmail.com" method="post" enctype="text/plain">
-      <label>Имя<input type="text" name="Имя" placeholder="Ваше имя" required></label><label>Телефон<input type="tel" name="Телефон" placeholder="+998 __ ___ __ __" required></label><label>Направление отдыха<input type="text" name="Направление" placeholder="Например: Турция, Египет, ОАЭ"></label><label>Комментарий<textarea name="Комментарий" rows="3" placeholder="Даты, количество туристов, бюджет"></textarea></label><button class="btn btn-primary" type="submit">Отправить заявку</button><p>Форма использует почтовый клиент устройства. Для быстрого ответа рекомендуем WhatsApp.</p>
-    </form>
-  </div>
-</section>
+  <section id="about" class="section">
+    <div class="container about-grid">
+      <div>
+        <span class="wave"></span>
+        <h2>О компании</h2>
+        <p class="lead">DEL MAR TRAVEL — туристическая компания, специализирующаяся на организации выездного туризма.</p>
+        <p>Компания оказывает услуги по подбору туристических туров, бронированию гостиниц, бронированию авиабилетов, организации трансферов, оформлению страховых полисов и консультациям по вопросам путешествий.</p>
+        <p>Наша задача — обеспечить клиентам комфортный, безопасный и качественный отдых.</p>
+      </div>
 
-<section id="contacts" class="section contacts-section">
-  <div class="container contact-grid">
-    <div><p class="eyebrow">Контакты</p><h2>Свяжитесь с нами</h2><div class="contact-card"><p><strong>ООО DEL MAR TRAVEL</strong></p><p><strong>Директор:</strong> Rashidova Xamida</p><p><strong>Адрес:</strong> г. Ташкент, Бектемирский район, МФЙ Zilola, ул. Рохат, дом 83</p><p><strong>Телефон / WhatsApp:</strong> <a href="https://wa.me/998951141761" target="_blank" rel="noopener">+998 95 114 17 61</a></p><p><strong>E-mail:</strong> <a href="mailto:delmartraveluz@gmail.com">delmartraveluz@gmail.com</a></p><p><strong>Режим работы:</strong><br>Понедельник – Пятница: 09:00 – 18:00<br>Суббота: 10:00 – 15:00<br>Воскресенье: выходной</p></div></div>
-    <div class="map-card"><iframe title="Карта DEL MAR TRAVEL" src="https://www.google.com/maps?q=Toshkent%20shahri%2C%20Bektemir%20tumani%2C%20Zilola%20MFY%2C%20Roxat%20ko%E2%80%98chasi%2C%2083-uy&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
-  </div>
-</section>
+      <div class="requisites">
+        <h3>Реквизиты компании</h3>
+        <dl>
+          <dt>Полное наименование</dt><dd>ООО DEL MAR TRAVEL</dd>
+          <dt>Директор</dt><dd>Rashidova Xamida</dd>
+          <dt>ИНН</dt><dd>313076261</dd>
+          <dt>Юридический адрес</dt><dd>г. Ташкент, Бектемирский район, МФЙ Zilola, ул. Рохат, дом 83</dd>
+          <dt>Адрес на узбекском языке</dt><dd>Toshkent shahri, Bektemir tumani, Zilola MFY, Roxat ko‘chasi, 83-uy</dd>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <section id="license" class="section section-light">
+    <div class="container">
+      <div class="license-box">
+        <span class="wave"></span>
+        <h2>Информация о лицензии</h2>
+        <p>Информация о лицензии на осуществление турагентской деятельности будет размещена после получения лицензии в установленном законодательством Республики Узбекистан порядке.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="request" class="section">
+    <div class="container request-grid">
+      <div>
+        <span class="wave"></span>
+        <h2>Подобрать тур</h2>
+        <p class="lead">Оставьте заявку или напишите в WhatsApp — менеджер свяжется с вами и предложит подходящие варианты.</p>
+        <a class="btn btn-primary" href="https://wa.me/998951141761?text=Здравствуйте!%20Хочу%20подобрать%20тур." target="_blank" rel="noopener">Написать в WhatsApp</a>
+      </div>
+
+      <form class="form" action="mailto:delmartraveluz@gmail.com" method="post" enctype="text/plain">
+        <label>Имя<input type="text" name="Имя" placeholder="Ваше имя" required></label>
+        <label>Телефон<input type="tel" name="Телефон" placeholder="+998 __ ___ __ __" required></label>
+        <label>Направление отдыха<input type="text" name="Направление" placeholder="Например: Турция, Египет, ОАЭ"></label>
+        <label>Комментарий<textarea name="Комментарий" rows="3" placeholder="Даты, количество туристов, бюджет"></textarea></label>
+        <button class="btn btn-primary" type="submit">Отправить заявку</button>
+        <small>Форма использует почтовый клиент устройства. Для быстрого ответа рекомендуем WhatsApp.</small>
+      </form>
+    </div>
+  </section>
+
+  <section id="contacts" class="section contacts">
+    <div class="container contacts-grid">
+      <div>
+        <span class="wave"></span>
+        <h2>Контакты</h2>
+        <div class="contact-list">
+          <p><strong>ООО DEL MAR TRAVEL</strong></p>
+          <p><strong>Директор:</strong> Rashidova Xamida</p>
+          <p><strong>Адрес:</strong> г. Ташкент, Бектемирский район, МФЙ Zilola, ул. Рохат, дом 83</p>
+          <p><strong>Телефон / WhatsApp:</strong> <a href="https://wa.me/998951141761" target="_blank" rel="noopener">+998 95 114 17 61</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:delmartraveluz@gmail.com">delmartraveluz@gmail.com</a></p>
+          <p><strong>Режим работы:</strong><br>Понедельник – Пятница: 09:00 – 18:00<br>Суббота: 10:00 – 15:00<br>Воскресенье: выходной</p>
+        </div>
+      </div>
+
+      <div class="map">
+        <iframe title="Карта DEL MAR TRAVEL" src="https://www.google.com/maps?q=Toshkent%20shahri%2C%20Bektemir%20tumani%2C%20Zilola%20MFY%2C%20Roxat%20ko%E2%80%98chasi%2C%2083-uy&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
 </main>
 
 <footer class="footer">
   <div class="container footer-grid">
-    <div><div class="footer-logo"><img src="assets/logo.png" alt="DEL MAR"><span>TRAVEL</span></div><p>Официальный сайт ООО DEL MAR TRAVEL.</p></div>
-    <div><h3>Реквизиты</h3><p>ИНН: 313076261<br>Директор: Rashidova Xamida</p></div>
-    <div><h3>Контакты</h3><p>+998 95 114 17 61<br>delmartraveluz@gmail.com</p></div>
+    <div>
+      <div class="footer-logo">
+        <img src="assets/logo.png" alt="DEL MAR" />
+        <span>TRAVEL</span>
+      </div>
+      <p>Официальный сайт ООО DEL MAR TRAVEL.</p>
+      <div class="socials">
+        <a href="https://wa.me/998951141761" target="_blank" rel="noopener">WA</a>
+        <a href="mailto:delmartraveluz@gmail.com">✉</a>
+      </div>
+    </div>
+
+    <div>
+      <h3>Контакты</h3>
+      <p>+998 95 114 17 61<br>delmartraveluz@gmail.com<br>г. Ташкент, Бектемирский район, МФЙ Zilola, ул. Рохат, дом 83</p>
+    </div>
+
+    <div>
+      <h3>Реквизиты</h3>
+      <p>ООО DEL MAR TRAVEL<br>ИНН: 313076261<br>Директор: Rashidova Xamida</p>
+    </div>
   </div>
-  <div class="footer-bottom"><div class="container">© <span id="year"></span> ООО DEL MAR TRAVEL. Все права защищены.</div></div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <span>© <span id="year"></span> ООО DEL MAR TRAVEL. Все права защищены.</span>
+      <span>Официальный сайт туристической компании.</span>
+    </div>
+  </div>
 </footer>
-<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
 </body>
 </html>
