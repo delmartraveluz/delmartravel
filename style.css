@@ -1921,4 +1921,308 @@ body.modal-open .site-header {
     opacity: 1;
     transform: translateY(0) scale(1);
   }
+}/* DIRECTIONS POPUP + MOBILE FIX */
+
+#directions [data-tour],
+#collections [data-tour] {
+  cursor: pointer;
+}
+
+@media (max-width: 760px) {
+  .direction-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .direction-card,
+  .direction-card.card-wide {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 220px !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+  }
+
+  .direction-card strong {
+    font-size: 22px !important;
+    line-height: 1.08 !important;
+  }
+
+  .direction-card em {
+    width: fit-content !important;
+  }
+
+  .tour-detail-section {
+    padding: 16px !important;
+  }
+
+  .tour-detail-section .tour-detail-card {
+    width: 94vw !important;
+    min-height: auto !important;
+    max-height: 86vh !important;
+    overflow-y: auto !important;
+    border-radius: 26px !important;
+  }
+
+  .tour-detail-section .tour-detail-content {
+    width: 100% !important;
+    padding: 46px 24px 28px !important;
+  }
+
+  .tour-detail-section .tour-detail-content h2 {
+    font-size: 32px !important;
+    line-height: 1.05 !important;
+  }
+
+  .tour-detail-actions {
+    flex-direction: column !important;
+  }
+
+  .tour-detail-btn {
+    width: 100% !important;
+  }
+}/* MOBILE FINAL FIX — DIRECTIONS, COLLECTIONS AND POPUP */
+
+@media (max-width: 760px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  .site-header {
+    width: calc(100% - 24px) !important;
+    top: 12px !important;
+    padding: 10px 12px !important;
+    border-radius: 24px !important;
+  }
+
+  .main-nav {
+    display: none !important;
+  }
+
+  .header-actions {
+    gap: 8px !important;
+  }
+
+  .header-actions .btn {
+    padding: 12px 14px !important;
+    font-size: 12px !important;
+  }
+
+  .brand img {
+    width: 44px !important;
+    height: 44px !important;
+  }
+
+  .brand strong {
+    font-size: 14px !important;
+  }
+
+  .brand small {
+    font-size: 9px !important;
+  }
+
+  .hero {
+    min-height: auto !important;
+    padding: 120px 18px 70px !important;
+  }
+
+  .hero-content {
+    width: 100% !important;
+  }
+
+  .hero h1 {
+    font-size: 46px !important;
+    line-height: .9 !important;
+  }
+
+  .hero h2 {
+    font-size: 26px !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-actions {
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .hero-actions .btn {
+    width: 100% !important;
+  }
+
+  .directions-section,
+  .collections-section,
+  .why-section,
+  .process-section,
+  .footer-cta {
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+  }
+
+  .section-head h2,
+  .collections-head-v3 h2 {
+    font-size: 40px !important;
+    line-height: .95 !important;
+    letter-spacing: -0.055em !important;
+  }
+
+  .section-head p {
+    font-size: 16px !important;
+    line-height: 1.55 !important;
+  }
+
+  /* Популярные направления — одна карточка в ряд */
+  .direction-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .direction-card,
+  .direction-card.card-wide {
+    width: 100% !important;
+    min-height: 240px !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    border-radius: 28px !important;
+    padding: 22px !important;
+  }
+
+  .direction-card strong {
+    font-size: 25px !important;
+    line-height: 1.05 !important;
+    max-width: 92% !important;
+  }
+
+  .direction-card .country {
+    font-size: 11px !important;
+  }
+
+  .direction-card em {
+    margin-top: 14px !important;
+    width: fit-content !important;
+  }
+
+  /* Подборки отдыха — тоже одна карточка в ряд */
+  .collection-grid-v3 {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 16px !important;
+  }
+
+  .collection-card-v3 {
+    width: 100% !important;
+    min-height: 220px !important;
+    grid-column: auto !important;
+    grid-row: auto !important;
+    border-radius: 26px !important;
+    padding: 22px !important;
+  }
+
+  .collection-card-v3 strong {
+    font-size: 22px !important;
+    line-height: 1.08 !important;
+  }
+
+  .collection-card-v3 p {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  /* Popup на телефоне */
+  .tour-detail-section {
+    padding: 14px !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .tour-detail-section .tour-detail-card {
+    width: 94vw !important;
+    min-height: auto !important;
+    max-height: 88vh !important;
+    overflow-y: auto !important;
+    border-radius: 26px !important;
+  }
+
+  .tour-detail-section .tour-detail-bg {
+    background-position: center center !important;
+  }
+
+  .tour-detail-section .tour-detail-content {
+    width: 100% !important;
+    padding: 54px 24px 30px !important;
+  }
+
+  .tour-detail-section .section-kicker {
+    font-size: 10px !important;
+    letter-spacing: .22em !important;
+  }
+
+  .tour-detail-section .tour-detail-content h2 {
+    font-size: 34px !important;
+    line-height: 1.02 !important;
+    letter-spacing: -0.055em !important;
+  }
+
+  .tour-detail-section .tour-detail-content > p {
+    font-size: 15.5px !important;
+    line-height: 1.5 !important;
+  }
+
+  .tour-detail-points {
+    gap: 11px !important;
+  }
+
+  .tour-detail-points span {
+    font-size: 14px !important;
+    line-height: 1.45 !important;
+  }
+
+  .tour-detail-actions {
+    flex-direction: column !important;
+    gap: 10px !important;
+  }
+
+  .tour-detail-btn {
+    width: 100% !important;
+    min-height: 52px !important;
+  }
+
+  .tour-detail-close {
+    top: 12px !important;
+    right: 12px !important;
+    width: 42px !important;
+    height: 42px !important;
+    font-size: 28px !important;
+  }
+
+  .footer-cta__inner {
+    width: 100% !important;
+    padding: 30px 24px !important;
+    border-radius: 26px !important;
+  }
+
+  .footer-cta__inner h2 {
+    font-size: 34px !important;
+  }
+
+  .footer-cta__actions {
+    width: 100% !important;
+  }
+
+  .footer-cta__btn {
+    width: 100% !important;
+  }
+
+  .footer-wrap {
+    grid-template-columns: 1fr !important;
+    gap: 34px !important;
+  }
+
+  .footer-bottom {
+    flex-direction: column !important;
+    gap: 12px !important;
+  }
 }

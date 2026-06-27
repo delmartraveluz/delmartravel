@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Del Mar Travel — премиальный подбор путешествий</title>
-  <meta name="description" content="Del Mar Travel — туристическая компания. Премиальный подбор путешествий с заботой о каждой детали." />
+  <meta name="description" content="Del Mar Travel  — туристическая компания. Премиальный подбор путешествий с заботой о каждой детали." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -74,11 +74,11 @@
       <p>Выбирайте направление по настроению: семейный отдых, премиальные курорты, романтические поездки или спокойный пляжный отпуск.</p>
     </div>
     <div class="direction-grid">
-      <a class="direction-card card-wide turkey" href="#request"><span class="country">🇹🇷 Турция</span><strong>Премиальные отели, семейный отдых и высокий сервис</strong><em>Подробнее</em></a>
-      <a class="direction-card egypt" href="#request"><span class="country">🇪🇬 Египет</span><strong>Шарм-эль-Шейх, Красное море и отели 5★</strong><em>Подробнее</em></a>
-      <a class="direction-card uae" href="#request"><span class="country">🇦🇪 ОАЭ</span><strong>Дубай, пляжи, шопинг и отели высокого уровня</strong><em>Подробнее</em></a>
-      <a class="direction-card maldives" href="#request"><span class="country">🇲🇻 Мальдивы</span><strong>Виллы, океан и приватный отдых</strong><em>Подробнее</em></a>
-      <a class="direction-card thailand" href="#request"><span class="country">🇹🇭 Таиланд</span><strong>Пхукет, Самуи и отдых у моря</strong><em>Подробнее</em></a>
+<a class="direction-card card-wide turkey" href="#tour-detail" data-tour="turkey"><span class="country">TR Турция</span><strong>Премиальные отели, семейный отдых и высокий сервис</strong><em>Подробнее</em></a>
+<a class="direction-card egypt" href="#tour-detail" data-tour="egypt"><span class="country">EG Египет</span><strong>Шарм-эль-Шейх, Красное море и отели 5★</strong><em>Подробнее</em></a>
+<a class="direction-card uae" href="#tour-detail" data-tour="uae"><span class="country">AE ОАЭ</span><strong>Дубай, пляжи, шопинг и отели высокого уровня</strong><em>Подробнее</em></a>
+<a class="direction-card maldives" href="#tour-detail" data-tour="maldives"><span class="country">MV Мальдивы</span><strong>Виллы, океан и приватный отдых</strong><em>Подробнее</em></a>
+<a class="direction-card thailand" href="#tour-detail" data-tour="thailand"><span class="country">TH Таиланд</span><strong>Пхукет, Самуи и отдых у моря</strong><em>Подробнее</em></a>
     </div>
   </section>
 
@@ -334,7 +334,7 @@
 
   <div class="footer-bottom">
     <p>© 2026 Del Mar Travel. Все права защищены.</p>
-    <p>Туры, отели и перелёты подбираются индивидуально. Информация на сайте не является публичной офертой.</p>
+    <p>Туры, отели и перелёты подбираются индивидуально.</p>
   </div>
 </footer>
 
@@ -349,7 +349,7 @@
     egypt: {
       title: 'Лучшие отели Египта',
       text: 'Популярные отели Египта для отдыха на Красном море: Шарм-эль-Шейх, Хургада и премиальные семейные курорты.',
-      image: 'assets/stage3-beach.jpg',
+      image: 'assets/directions/egypt.jpg',
       points: [
         'Проверяем пляж, заход в море, питание и состояние номеров.',
         'Подбираем отели под семью, пару или спокойный премиальный отдых.',
@@ -359,7 +359,7 @@
     turkey: {
       title: 'Семейные и премиальные отели Турции',
       text: 'Подбираем Турцию под формат отдыха: Белек, Кемер, Сиде, Анталья, Бодрум и хорошие отели 5★.',
-      image: 'assets/collections/premium.jpg',
+      image: 'assets/directions/turkey.jpg',
       points: [
         'Смотрим питание, территорию, пляж, номера и инфраструктуру.',
         'Подбираем отели с аквапарком, детскими клубами или спокойной атмосферой.',
@@ -369,7 +369,7 @@
     uae: {
       title: 'Отдых в ОАЭ с правильным выбором отеля',
       text: 'Дубай, Абу-Даби, Шарджа и Рас-эль-Хайма — подбираем отель под сезон, бюджет и стиль отдыха.',
-      image: 'assets/collections/premium.jpg',
+      image: 'assets/directions/uae.jpg',
       points: [
         'Объясняем разницу между эмиратами простым языком.',
         'Проверяем расположение, пляж, питание и транспорт.',
@@ -379,7 +379,7 @@
     thailand: {
       title: 'Таиланд: Пхукет, Паттайя и острова',
       text: 'Подбираем Таиланд с учётом сезона, пляжа, инфраструктуры рядом и удобства перелёта.',
-      image: 'assets/collections/couples.jpg',
+      image: 'assets/directions/thailand.jpg',
       points: [
         'Смотрим район, пляж и что находится рядом с отелем.',
         'Подбираем отели для спокойного, семейного или активного отдыха.',
@@ -389,7 +389,7 @@
     maldives: {
       title: 'Мальдивы под ваш формат отдыха',
       text: 'Подбираем остров, питание, виллу и трансфер, чтобы отдых соответствовал ожиданиям.',
-      image: 'assets/collections/couples.jpg',
+      image: 'assets/directions/maldives.jpg',
       points: [
         'Сравниваем острова, питание, риф, пляж и тип виллы.',
         'Объясняем разницу между beach villa, water villa и family villa.',
