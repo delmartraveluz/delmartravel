@@ -33,11 +33,12 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-blue" href="#request">Menga tur tanlab bering</a>
-        <a class="btn btn-whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-          <span class="wa-icon">◉</span> WhatsApp
-        </a>
-      </div>
+  <a class="btn btn-blue" href="#requestModal" data-request-open>Menga tur tanlab bering</a>
+
+  <a class="btn btn-whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+    <span class="wa-icon">◉</span> WhatsApp
+  </a>
+</div>
       
       <button class="mobile-menu-btn" type="button" aria-label="Открыть меню">☰</button>
     </header>
@@ -49,12 +50,12 @@
 
     <section class="hero-content">
       <div class="copy">
-        <p class="eyebrow">Premium sayohatlarni tanlash</p>
+        <p class="eyebrow">PREMIUM SAYOHATLAR TANLOVI</p>
         <h1><span>DEL MAR</span> <em>TRAVEL</em></h1>
         <h2>Dunyoni biz bilan kashf eting</h2>
         <p class="lead">Har bir detalga e’tibor berib, siz uchun ideal dam olishni tanlaymiz.</p>
         <div class="cta-row">
-          <a class="hero-btn primary" href="#request">Menga tur tanlab bering</a>
+         <a class="hero-btn primary" href="#requestModal" data-request-open>Menga tur tanlab bering</a>
           <a class="hero-btn ghost" href="#directions"><span class="play">▷</span> Yo‘nalishlarni ko‘rish</a>
         </div>
       </div>
@@ -181,9 +182,7 @@
       </div>
 
       <div class="tour-detail-actions">
-        <a class="tour-detail-btn tour-detail-btn-blue" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-          Menga tur tanlab bering
-        </a>
+        <a class="btn btn-blue" href="#requestModal" data-request-open>Menga tur tanlab bering</a>
 
         <a class="tour-detail-btn tour-detail-btn-green" href="https://wa.me/998951141761" target="_blank" rel="noopener">
           WhatsApp
@@ -256,7 +255,7 @@
       <p class="section-kicker">QANDAY ISHLAYMIZ</p>
       <h2>Arizadan dam olishgacha tushunarli yo‘l</h2>
       <p>Murakkab shakllar va cheksiz qidiruvlarsiz. Siz WhatsApp orqali yozasiz, menejer esa mos variantlarni tanlab, farqlarini oddiy tilda tushuntiradi.</p>
-      <a class="process-btn" href="#request">Ariza qoldirish</a>
+     <a class="process-btn" href="#requestModal" data-request-open>Ariza qoldirish</a>
     </div>
 
     <div class="process-card-v3">
@@ -317,28 +316,15 @@
       </div>
     </div>
 
-    <div class="about-photo"></div>
+   <div class="about-photo">
+  <div class="about-photo-badge">
+    <strong>Del Mar Travel</strong>
+    <span>Premium sayohatlar tanlovi</span>
   </div>
+</div>
 </section>
 
-  <section class="footer-cta" id="request">
-  <div class="footer-cta__inner">
-    <div>
-      <p class="section-kicker">TUR TANLASH UCHUN ARIZA</p>
-      <h2>Qayerga borishni bilmayapsizmi?</h2>
-      <p>Bizga yozing — O‘zbekistondan qulay yo‘nalish, mehmonxona va parvozni tanlab beramiz.</p>
-    </div>
-
-    <div class="footer-cta__actions">
-      <a class="footer-cta__btn footer-cta__btn--blue" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-        Menga tur tanlab bering
-      </a>
-      <a class="footer-cta__btn footer-cta__btn--whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-        WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
+ 
 
 <footer class="site-footer" id="contacts">
   <div class="footer-wrap">
@@ -388,30 +374,58 @@
   <a href="#collections">O‘zbekistondan uchishlar</a>
 </div>
 
-    <div class="footer-column">
+     <div class="footer-column">
   <h3>Mijozlar uchun</h3>
   <a href="#process">Qanday ishlaymiz</a>
   <a href="#why">Nega bizni tanlashadi</a>
   <a href="#about">Kompaniya haqida</a>
-  <a href="#request">Tur tanlash</a>
+  <a href="#requestModal" data-request-open>Tur tanlash</a>
   <a href="#contacts">Aloqa</a>
+
+  <div class="footer-socials">
+    <h3>Biz bilan aloqa</h3>
+    <a href="https://wa.me/998951141761" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#">Instagram</a>
+  </div>
 </div>
 
-      <div class="footer-socials">
-  <h3>Biz bilan aloqa</h3>
-  <a href="https://wa.me/998951141761" target="_blank" rel="noopener">WhatsApp</a>
-  <a href="#">Instagram</a>
-</div>
+  
     </div>
   </div>
 
-  <div class="footer-bottom">
-    <p>© 2026 Del Mar Travel. Все права защищены.</p>
-    <p>Туры, отели и перелёты подбираются индивидуально.</p>
-  </div>
+ <div class="footer-bottom">
+  <p>© 2026 Del Mar Travel. Barcha huquqlar himoyalangan.</p>
+  <p>Turlar, mehmonxonalar va parvozlar har bir mijoz uchun individual tanlanadi.</p>
+</div>
 </footer>
 
+<section class="request-modal" id="requestModal" aria-hidden="true">
+  <div class="request-modal__overlay" data-request-close></div>
 
+  <div class="request-modal__card">
+    <button class="request-modal__close" type="button" data-request-close aria-label="Yopish">×</button>
+
+    <div class="request-modal__content">
+      <p class="section-kicker">TUR TANLASH BO‘YICHA ARIZA</p>
+      <h2>Ortiqcha qidiruvsiz sizga mos tur tanlab beramiz</h2>
+      <p>
+        WhatsApp orqali yozing — sanalar, sayyohlar tarkibi, budjet va istaklaringizni aniqlab, sizga mos yo‘nalish, mehmonxona va qulay parvozni tanlaymiz.
+      </p>
+
+      <div class="request-modal__points">
+        <span>Oila, juftlik yoki premium dam olish uchun mos variantlarni tanlaymiz.</span>
+        <span>Mehmonxonalar orasidagi farqni oddiy tilda tushuntiramiz.</span>
+        <span>Mos variantlarni WhatsApp orqali yuboramiz.</span>
+      </div>
+
+      <a class="request-modal__btn" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+        WhatsApp orqali yozish
+      </a>
+    </div>
+
+    <div class="request-modal__image"></div>
+  </div>
+</section>
   <script>
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
@@ -610,6 +624,40 @@ if (detailSection) {
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     closeTourDetail();
+  }
+});
+const requestModal = document.getElementById('requestModal');
+const requestOpenButtons = document.querySelectorAll('[data-request-open]');
+const requestCloseButtons = document.querySelectorAll('[data-request-close]');
+
+function openRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.add('is-open');
+  requestModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('request-modal-open');
+}
+
+function closeRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.remove('is-open');
+  requestModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('request-modal-open');
+}
+
+requestOpenButtons.forEach(button => {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    openRequestModal();
+  });
+});
+
+requestCloseButtons.forEach(button => {
+  button.addEventListener('click', closeRequestModal);
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeRequestModal();
   }
 });
 </script>

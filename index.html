@@ -33,7 +33,7 @@
       </nav>
 
       <div class="header-actions">
-        <a class="btn btn-blue" href="#request">Подберите мне тур</a>
+        <a class="btn btn-blue" href="#request"data-request-open>Подберите мне тур</a>
         <a class="btn btn-whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
           <span class="wa-icon">◉</span> WhatsApp
         </a>
@@ -54,7 +54,7 @@
         <h2>Откройте мир путешествий<br>вместе с нами</h2>
         <p class="lead">Подберём идеальный отдых<br>с заботой о каждой детали.</p>
         <div class="cta-row">
-          <a class="hero-btn primary" href="#request">Подберите мне тур</a>
+          <a class="hero-btn primary" href="#request" data-request-open>Подберите мне тур</a>
           <a class="hero-btn ghost" href="#directions"><span class="play">▷</span> Смотреть направления</a>
         </div>
       </div>
@@ -225,7 +225,7 @@
         <p class="section-kicker">Как мы работаем</p>
         <h2>Понятный путь от заявки до отдыха</h2>
         <p>Без сложных форм и бесконечного поиска. Вы пишете нам в WhatsApp, а менеджер подбирает варианты и объясняет разницу простым языком.</p>
-        <a class="process-btn" href="#request">Оставить заявку</a>
+        <a class="process-btn" href="#requestModal" data-request-open>Оставить заявку</a>
       </div>
 
       <div class="process-card-v3">
@@ -256,24 +256,7 @@
     </div>
   </section>
 
-  <section class="footer-cta" id="request">
-  <div class="footer-cta__inner">
-    <div>
-      <p class="section-kicker">Заявка на подбор</p>
-      <h2>Не знаете, куда поехать?</h2>
-      <p>Напишите нам — подберём направление, отель и удобный вылет из Узбекистана.</p>
-    </div>
-
-    <div class="footer-cta__actions">
-      <a class="footer-cta__btn footer-cta__btn--blue" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-        Подберите мне тур
-      </a>
-      <a class="footer-cta__btn footer-cta__btn--whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
-        WhatsApp
-      </a>
-    </div>
-  </div>
-</section>
+ 
 
 <footer class="site-footer" id="contacts">
   <div class="footer-wrap">
@@ -345,7 +328,33 @@
   </div>
 </footer>
 
+<section class="request-modal" id="requestModal" aria-hidden="true">
+  <div class="request-modal__overlay" data-request-close></div>
 
+  <div class="request-modal__card">
+    <button class="request-modal__close" type="button" data-request-close aria-label="Закрыть">×</button>
+
+    <div class="request-modal__content">
+      <p class="section-kicker">ЗАЯВКА НА ПОДБОР</p>
+      <h2>Поможем выбрать тур без лишнего поиска</h2>
+      <p>
+        Напишите нам в WhatsApp — уточним даты, состав туристов, бюджет и подберём направление, отель и удобный вылет под ваш формат отдыха.
+      </p>
+
+      <div class="request-modal__points">
+        <span>Подберём варианты под семью, пару или премиум-отдых.</span>
+        <span>Объясним разницу между отелями простым языком.</span>
+        <span>Сразу отправим подходящие варианты в WhatsApp.</span>
+      </div>
+
+      <a class="request-modal__btn" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+        Написать в WhatsApp
+      </a>
+    </div>
+
+    <div class="request-modal__image"></div>
+  </div>
+</section>
   <script>
   const header = document.querySelector('.site-header');
   window.addEventListener('scroll', () => {
@@ -535,6 +544,40 @@ if (detailSection) {
 document.addEventListener('keydown', function (event) {
   if (event.key === 'Escape') {
     closeTourDetail();
+  }
+});
+const requestModal = document.getElementById('requestModal');
+const requestOpenButtons = document.querySelectorAll('[data-request-open]');
+const requestCloseButtons = document.querySelectorAll('[data-request-close]');
+
+function openRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.add('is-open');
+  requestModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('request-modal-open');
+}
+
+function closeRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.remove('is-open');
+  requestModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('request-modal-open');
+}
+
+requestOpenButtons.forEach(button => {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    openRequestModal();
+  });
+});
+
+requestCloseButtons.forEach(button => {
+  button.addEventListener('click', closeRequestModal);
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeRequestModal();
   }
 });
 </script>
