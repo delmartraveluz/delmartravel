@@ -1,0 +1,624 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Del Mar Travel — Premium Travel Selection</title>
+<meta name="description" content="Del Mar Travel is a travel company offering premium travel selection with attention to every detail." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   <header class="site-header">
+      <a class="brand" href="#top" aria-label="Del Mar Travel">
+        <img src="assets/delmar-logo.png" alt="Del Mar Travel logo" />
+        <span>
+          <strong>Del Mar Travel</strong>
+          <small>Travel company</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Main menu">
+        <div class="lang-switch">
+  <a href="index.html">RU</a>
+  <span>/</span>
+  <a href="uz.html">UZ</a>
+  <span>/</span>
+  <a class="active" href="en.html">EN</a>
+</div>
+        <a href="#directions">Directions</a>
+        <a href="#collections">Collections</a>
+        <a href="#about">About the Company</a>
+        <a href="#contacts">Contacts</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="btn btn-blue" href="#requestModal" data-request-open>Find my tour</a>
+        <a class="btn btn-whatsapp" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+          <span class="wa-icon">◉</span> WhatsApp
+        </a>
+      </div>
+      <button class="mobile-menu-btn" type="button" aria-label="Open menu">☰</button>
+      
+    </header>
+  <main class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="shade" aria-hidden="true"></div>
+
+   
+
+    <section class="hero-content">
+      <div class="copy">
+  <p class="eyebrow">PERSONAL PREMIUM TRAVEL SELECTION</p>
+  <h1><span>DEL MAR</span> <em>TRAVEL</em></h1>
+  <h2>Discover the world with us</h2>
+  <p class="lead">We help you choose the right trip with attention to every detail.</p>
+
+  <div class="cta-row">
+    <a class="hero-btn primary" href="#requestModal" data-request-open>Find my tour</a>
+    <a class="hero-btn ghost" href="#directions"><span class="play">▷</span> View destinations</a>
+  </div>
+</div>
+
+<aside class="trust-card" aria-label="Del Mar Travel advantages">
+  <div class="stars">★★★★★</div>
+  <h3>Over 1000<br>happy travelers</h3>
+  <ul>
+    <li>Personal selection</li>
+    <li>Trusted tour operators</li>
+    <li>24/7 support</li>
+  </ul>
+</aside>
+    </section>
+
+    <a class="scroll" href="#directions" aria-label="Scroll down"><span></span><span></span><span></span></a>
+  </main>
+
+
+  <section class="directions-section" id="directions">
+  <div class="section-head">
+    <p class="section-kicker">POPULAR DESTINATIONS</p>
+    <h2>Where our travelers go most often</h2>
+    <p>Choose a destination that fits your mood: family holidays, premium resorts, romantic trips or a relaxed beach escape.</p>
+  </div>
+
+  <div class="direction-grid">
+    <a class="direction-card card-wide turkey" href="#tour-detail" data-tour="turkey">
+      <span class="country">TR Turkey</span>
+      <strong>Premium hotels, family holidays and high-level service</strong>
+      <em>Details</em>
+    </a>
+
+    <a class="direction-card egypt" href="#tour-detail" data-tour="egypt">
+      <span class="country">EG Egypt</span>
+      <strong>Sharm El Sheikh, the Red Sea and 5★ hotels</strong>
+      <em>Details</em>
+    </a>
+
+    <a class="direction-card uae" href="#tour-detail" data-tour="uae">
+      <span class="country">AE UAE</span>
+      <strong>Dubai, beaches, shopping and high-end hotels</strong>
+      <em>Details</em>
+    </a>
+
+    <a class="direction-card maldives" href="#tour-detail" data-tour="maldives">
+      <span class="country">MV Maldives</span>
+      <strong>Villas, ocean views and a calm premium escape</strong>
+      <em>Details</em>
+    </a>
+
+    <a class="direction-card thailand" href="#tour-detail" data-tour="thailand">
+      <span class="country">TH Thailand</span>
+      <strong>Phuket, Samui and seaside holidays</strong>
+      <em>Details</em>
+    </a>
+  </div>
+</section>
+
+  <section class="collections-section" id="collections">
+  <div class="collections-wrap-v3">
+    <div class="collections-head-v3">
+      <p class="section-kicker">TRAVEL STYLES</p>
+      <h2>We don’t just choose a country — we choose the right travel format</h2>
+    </div>
+
+    <div class="collection-grid-v3">
+      <a class="collection-card-v3 family" href="#tour-detail" data-tour="family">
+        <span>01</span>
+        <strong>Family holidays</strong>
+        <p>Hotels with good food, kids’ clubs, water parks and comfortable territory.</p>
+      </a>
+
+      <a class="collection-card-v3 premium" href="#tour-detail" data-tour="premium">
+        <span>02</span>
+        <strong>Premium holidays</strong>
+        <p>5★ hotels, high-level service, privacy and the right room choice.</p>
+      </a>
+
+      <a class="collection-card-v3 couples" href="#tour-detail" data-tour="couples">
+        <span>03</span>
+        <strong>For couples</strong>
+        <p>Romantic resorts, quiet beaches, beautiful views and hotels without unnecessary noise.</p>
+      </a>
+
+      <a class="collection-card-v3 allinclusive" href="#tour-detail" data-tour="allinclusive">
+        <span>04</span>
+        <strong>All inclusive</strong>
+        <p>Hotels where food, service and infrastructure truly match your expectations.</p>
+      </a>
+
+      <a class="collection-card-v3 aquapark" href="#tour-detail" data-tour="aquapark">
+        <span>05</span>
+        <strong>Hotels with water parks</strong>
+        <p>Family hotels where children have fun and adults can relax comfortably.</p>
+      </a>
+
+      <a class="collection-card-v3 uzbekistan uzbekistan-card-final" href="#tour-detail" data-tour="uzbekistan">
+        <img class="collection-card-photo" src="assets/collections/uzbekistan-airways.jpg" alt="Uzbekistan Airways">
+        <span>06</span>
+        <strong>Flights from Uzbekistan</strong>
+        <p>Popular destinations and convenient travel options from Tashkent and other cities.</p>
+      </a>
+    </div>
+  </div>
+</section>
+<section class="tour-detail-section" id="tour-detail">
+  <div class="tour-detail-card">
+    <div class="tour-detail-bg" aria-hidden="true"></div>
+    <button class="tour-detail-close" id="tourDetailClose" type="button" aria-label="Close">×</button>
+
+    <div class="tour-detail-content">
+      <p class="section-kicker">DESTINATION SELECTION</p>
+      <h2 id="tourDetailTitle">Best hotels in Egypt</h2>
+
+      <p id="tourDetailText">
+        Popular hotels we select based on your budget, travel group and holiday style.
+      </p>
+
+      <div class="tour-detail-points">
+        <span id="tourDetailPoint1">We check the beach, food, rooms and hotel location.</span>
+        <span id="tourDetailPoint2">We explain not only the advantages, but also important details before booking.</span>
+        <span id="tourDetailPoint3">We select options for families, couples, premium holidays or a calm escape.</span>
+      </div>
+
+      <div class="tour-detail-actions">
+        <a class="tour-detail-btn tour-detail-btn-blue" href="#requestModal" data-request-open>Find my tour</a>
+        <a class="tour-detail-btn tour-detail-btn-green" href="https://wa.me/998951141761" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+</section>
+  <section class="why-section" id="why">
+    <div class="section-head centered">
+  <p class="section-kicker">WHY CHOOSE US</p>
+  <h2>Del Mar Travel is more than just selling a tour</h2>
+  <p>We take care of travel selection, detail checking and support, so your holiday feels clear, safe and truly right for you.</p>
+</div>
+    <div class="why-grid premium-why-grid">
+      <article class="why-card premium-card feature-card personal-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8 7V6a4 4 0 0 1 8 0v1"/><path d="M6 7h12a2 2 0 0 1 2 2v9a3 3 0 0 1-3 3H7a3 3 0 0 1-3-3V9a2 2 0 0 1 2-2Z"/><path d="M9 7v14M15 7v14"/></svg>
+        </div>
+        <div class="card-copy">
+          <h3>Personal<br>selection</h3>
+<p>We don’t offer random options. First, we clarify the travelers, budget, expectations and holiday style — only then do we select the destination and hotel.</p>
+        </div>
+      </article>
+
+      <article class="why-card premium-card image-card hotel-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 21h16"/><path d="M6 21V5a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v16"/><path d="M9 8h2M13 8h2M9 12h2M13 12h2M10 21v-4h4v4"/></svg>
+        </div>
+        <div class="card-copy">
+          <h3>We know hotels</h3>
+<p>We explain not only the advantages, but also important details: beach, food, territory, rooms, nearby infrastructure and who the hotel is best suited for.</p>
+        </div>
+      </article>
+
+      <article class="why-card premium-card partners-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3 20 6v6c0 5-3.4 8.3-8 9-4.6-.7-8-4-8-9V6l8-3Z"/><path d="m8.5 12 2.2 2.2 4.8-5"/></svg>
+        </div>
+        <div class="partners-copy">
+          <h3>Reliable<br>partners</h3>
+<p>We work with trusted tour operators and help you choose options where the price, service and booking conditions make sense.</p>
+        </div>
+        <div class="partner-logos" aria-label="Partner tour operators">
+          <img src="assets/operators/funsun.svg" alt="FUN&amp;SUN">
+          <img src="assets/operators/pegas.svg" alt="PEGAS Touristik">
+          <img src="assets/operators/anex.svg" alt="ANEX Tour">
+          <img src="assets/operators/easybooking.svg" alt="Easy Booking">
+          <img src="assets/operators/travelasialuxe.svg" alt="Travel Asia Luxe">
+          <img src="assets/operators/kompas.svg" alt="KOMPAS">
+          <img src="assets/operators/selfie.svg" alt="Selfie Travel">
+        </div>
+      </article>
+
+      <article class="why-card premium-card image-card support-card">
+        <div class="card-icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M4 13a8 8 0 0 1 16 0"/><path d="M4 13v3a2 2 0 0 0 2 2h1v-7H6a2 2 0 0 0-2 2ZM20 13v3a2 2 0 0 1-2 2h-1v-7h1a2 2 0 0 1 2 2Z"/><path d="M15 20h-3"/></svg>
+        </div>
+        <div class="card-copy">
+          <h3>Always in touch</h3>
+<p>We support travelers before the trip and during the holiday: documents, flights, transfers, check-in and important tour-related questions.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="process-section" id="process">
+    <div class="process-wrap process-wrap-v3">
+      <div class="process-copy">
+        <p class="section-kicker">How We Work</p>
+        <h2>A Clear Path from Application to Vacation</h2>
+        <p>Without complicated forms or endless searching. You message us on WhatsApp, and our manager selects options and explains the differences in simple terms.</p>
+        <a class="process-btn" href="#requestModal" data-request-open>Leave a Request</a>
+      </div>
+
+      <div class="process-card-v3">
+        <div class="process-list-v3">
+          <div class="process-row-v3"><b>01</b><span>📝</span><div><strong>Leave a Request</strong><p>You provide dates, traveler details, departure city and preferences.</p></div></div>
+          <div class="process-row-v3"><b>02</b><span>💬</span><div><strong>Clarify Details</strong><p>We understand what kind of vacation you need: family-friendly, peaceful, premium or active.</p></div></div>
+          <div class="process-row-v3"><b>03</b><span>🌍</span><div><strong>Send Options</strong><p>We show suitable destinations and hotels without unnecessary clutter.</p></div></div>
+          <div class="process-row-v3"><b>04</b><span>✈️</span><div><strong>Support Your Trip</strong><p>We help with documents, payments, flights and important moments until you return.</p></div></div>
+        </div>
+        <div class="process-photo-v3"></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section" id="about">
+    <div class="about-card">
+      <div class="about-text">
+        <p class="section-kicker">ABOUT THE COMPANY</p>
+<h2>A travel company for those who value comfort, calm and attention to detail</h2>
+<p>Del Mar Travel helps clients choose holidays that match real expectations: not just a country and a hotel, but a comfortable travel scenario. We focus on careful selection, honest explanations and attentive support.</p>
+
+<div class="about-stats">
+  <span><strong>1000+</strong><small>travelers</small></span>
+  <span><strong>24/7</strong><small>support</small></span>
+  <span><strong>5★</strong><small>quality focus</small></span>
+</div>
+
+  </section>
+
+ 
+
+<footer class="site-footer" id="contacts">
+  <div class="footer-wrap">
+    <div class="footer-brand">
+  <div class="footer-logo-row">
+    <img src="assets/delmar-logo.png" alt="Del Mar Travel">
+    <div>
+      <strong>Del Mar Travel</strong>
+      <span>Travel company</span>
+    </div>
+  </div>
+
+  <div class="footer-requisites-clean">
+    <strong>Company details</strong>
+    <span>ООО DEL MAR TRAVEL</span>
+    <span>TIN: 313076261</span>
+    <span>Account: 20208000507478409001</span>
+    <span>Bank: Kapitalbank</span>
+    <span>MFO: 01158</span>
+  </div>
+
+  <div class="footer-contacts">
+    <a href="https://wa.me/998951141761" target="_blank" rel="noopener">WhatsApp: +998 95 114 17 61</a>
+    <a href="mailto:delmartraveluz@gmail.com">delmartraveluz@gmail.com</a>
+    <span>Tashkent, Uzbekistan</span>
+  </div>
+</div>
+
+<div class="footer-column">
+  <h3>Destinations</h3>
+  <a href="#directions">Turkey</a>
+  <a href="#directions">Egypt</a>
+  <a href="#directions">UAE</a>
+  <a href="#directions">Thailand</a>
+  <a href="#directions">Maldives</a>
+  <a href="#directions">Vietnam</a>
+  <a href="#directions">Europe</a>
+</div>
+
+    <div class="footer-column">
+  <h3>Travel styles</h3>
+  <a href="#collections">Family holidays</a>
+  <a href="#collections">Premium holidays</a>
+  <a href="#collections">All inclusive</a>
+  <a href="#collections">Hotels with water parks</a>
+  <a href="#collections">For couples</a>
+  <a href="#collections">Flights from Uzbekistan</a>
+</div>
+
+<div class="footer-column">
+  <h3>For clients</h3>
+  <a href="#process">How we work</a>
+  <a href="#why">Why choose us</a>
+  <a href="#about">About us</a>
+  <a href="#requestModal" data-request-open>Find my tour</a>
+  <a href="#contacts">Contacts</a>
+
+  <div class="footer-socials">
+    <h3>Stay in touch</h3>
+    <a href="https://wa.me/998951141761" target="_blank" rel="noopener">WhatsApp</a>
+    <a href="#" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</div>
+</div>
+
+<div class="footer-bottom">
+  <p>© 2026 Del Mar Travel. All rights reserved.</p>
+  <p>Tours, hotels and flights are selected individually for each client.</p>
+</div>
+</footer>
+
+<section class="request-modal" id="requestModal" aria-hidden="true">
+  <div class="request-modal__overlay" data-request-close></div>
+
+  <div class="request-modal__card">
+    <button class="request-modal__close" type="button" data-request-close aria-label="Close">×</button>
+
+    <div class="request-modal__content">
+      <p class="section-kicker">TOUR REQUEST</p>
+      <h2>We’ll help you choose a trip without endless searching</h2>
+      <p>
+        Message us on WhatsApp — we’ll clarify your dates, travelers, budget and preferences, then suggest the right destination, hotel and flight options.
+      </p>
+
+      <div class="request-modal__points">
+        <span>We select options for families, couples or premium holidays.</span>
+        <span>We explain the difference between hotels in simple language.</span>
+        <span>We send suitable options directly to WhatsApp.</span>
+      </div>
+
+      <a class="request-modal__btn" href="https://wa.me/998951141761" target="_blank" rel="noopener">
+        Message us on WhatsApp
+      </a>
+    </div>
+
+    <div class="request-modal__image"></div>
+  </div>
+</section>
+  <script>
+  const header = document.querySelector('.site-header');
+  window.addEventListener('scroll', () => {
+    header.classList.toggle('is-scrolled', window.scrollY > 20);
+  });
+
+  const tourDetails = {
+  egypt: {
+    title: 'Best hotels in Egypt',
+    text: 'Popular hotels in Egypt for Red Sea holidays: Sharm El Sheikh, Hurghada and premium family resorts.',
+    image: 'assets/directions/egypt.jpg',
+    points: [
+      'We check the beach, sea entry, food and room condition.',
+      'We select hotels for families, couples or calm premium holidays.',
+      'We explain the difference between similar hotels before booking.'
+    ]
+  },
+
+  turkey: {
+    title: 'Family and premium hotels in Turkey',
+    text: 'We select Turkey based on your holiday style: Belek, Kemer, Side, Antalya, Bodrum and good 5★ hotels.',
+    image: 'assets/directions/turkey.jpg',
+    points: [
+      'We check food, territory, beach, rooms and infrastructure.',
+      'We select hotels with water parks, kids’ clubs or a calm atmosphere.',
+      'We help you choose between similar resorts and hotel concepts.'
+    ]
+  },
+
+  uae: {
+    title: 'The right hotel choice in the UAE',
+    text: 'Dubai, Abu Dhabi, Sharjah and Ras Al Khaimah — we select a hotel based on season, budget and your travel style.',
+    image: 'assets/directions/uae.jpg',
+    points: [
+      'We explain the difference between the Emirates in simple language.',
+      'We check location, beach, food and transport convenience.',
+      'We select options for families, couples or premium holidays.'
+    ]
+  },
+
+  thailand: {
+    title: 'Thailand: Phuket, Pattaya and islands',
+    text: 'We select Thailand based on season, beach quality, nearby infrastructure and flight convenience.',
+    image: 'assets/directions/thailand.jpg',
+    points: [
+      'We check the area, beach and what is located near the hotel.',
+      'We select hotels for calm, family or active holidays.',
+      'We explain where it is better to travel by month.'
+    ]
+  },
+
+  maldives: {
+    title: 'Maldives — the right format for your holiday',
+    text: 'We select the island, meal plan, villa and transfer so the trip matches your expectations.',
+    image: 'assets/directions/maldives.jpg',
+    points: [
+      'We compare islands, meal plans, reef, beach and villa types.',
+      'We explain the difference between beach villas, water villas and family villas.',
+      'We select options for couples, families or premium holidays.'
+    ]
+  },
+
+  vietnam: {
+    title: 'Vietnam: sea, hotels and a comfortable season',
+    text: 'Phu Quoc, Nha Trang and Cam Ranh — we select hotels with good beaches, food and infrastructure.',
+    image: 'assets/collections/family.jpg',
+    points: [
+      'We take into account the season, beach, area and flight convenience.',
+      'We select hotels for families, couples or calm holidays.',
+      'We explain the advantages and important details of each resort.'
+    ]
+  },
+
+  family: {
+    title: 'Hotels for family holidays',
+    text: 'We select hotels that are comfortable for children and relaxing for adults: food, territory, kids’ clubs and water parks.',
+    image: 'assets/collections/family.jpg',
+    points: [
+      'We check kids’ clubs, food and territory safety.',
+      'We select room options that fit the family composition.',
+      'We make sure children have fun and adults feel comfortable.'
+    ]
+  },
+
+  premium: {
+    title: 'Premium holidays and 5★ hotels',
+    text: 'We select high-level hotels where service, privacy, food and the right room choice truly matter.',
+    image: 'assets/collections/premium.jpg',
+    points: [
+      'We check service level, restaurants, beach and room quality.',
+      'We select hotels without unnecessary noise or compromises.',
+      'We explain what is really worth paying for.'
+    ]
+  },
+
+  couples: {
+    title: 'Holidays for couples',
+    text: 'We select romantic resorts, quiet beaches, beautiful views and hotels without unnecessary noise.',
+    image: 'assets/collections/couples.jpg',
+    points: [
+      'We select calm hotels and beautiful locations.',
+      'We check the beach, privacy and overall atmosphere.',
+      'We help choose a destination that fits the season and budget.'
+    ]
+  },
+
+  allinclusive: {
+    title: 'All inclusive hotels',
+    text: 'We select hotels where food, service and infrastructure truly match your expectations.',
+    image: 'assets/collections/buffet.jpg',
+    points: [
+      'We check food quality, bars, restaurants and the hotel concept.',
+      'We explain where all inclusive is truly strong.',
+      'We select options for families, couples or premium holidays.'
+    ]
+  },
+
+  aquapark: {
+    title: 'Hotels with water parks',
+    text: 'We select family hotels where children have fun and adults can relax comfortably.',
+    image: 'assets/collections/aquapark.jpg',
+    points: [
+      'We check water slides, pools and children’s age suitability.',
+      'We check territory, food and family infrastructure.',
+      'We select hotels where the water park is a real advantage, not just a picture.'
+    ]
+  },
+
+  uzbekistan: {
+    title: 'Flights from Uzbekistan',
+    text: 'Popular destinations and convenient travel options from Tashkent and other cities.',
+    image: 'assets/collections/uzbekistan-airways.jpg',
+    points: [
+      'We select destinations with convenient flights from Uzbekistan.',
+      'We check connections, flight duration and seasonality.',
+      'We help choose the best route for your budget and dates.'
+    ]
+  }
+};
+
+  const detailTitle = document.getElementById('tourDetailTitle');
+  const detailText = document.getElementById('tourDetailText');
+  const detailBg = document.querySelector('.tour-detail-bg');
+  const detailSection = document.getElementById('tour-detail');
+  const point1 = document.getElementById('tourDetailPoint1');
+  const point2 = document.getElementById('tourDetailPoint2');
+  const point3 = document.getElementById('tourDetailPoint3');
+
+  function openTourDetail(key) {
+    const data = tourDetails[key];
+    if (!data) return;
+    detailSection.classList.add('is-open');
+
+    detailTitle.textContent = data.title;
+    detailText.textContent = data.text;
+    point1.textContent = data.points[0];
+    point2.textContent = data.points[1];
+    point3.textContent = data.points[2];
+    detailBg.style.backgroundImage =
+      `linear-gradient(90deg, rgba(7,31,61,.92) 0%, rgba(7,31,61,.76) 42%, rgba(7,31,61,.22) 72%, rgba(7,31,61,0) 100%), url("${data.image}")`;
+
+    document.querySelectorAll('.tour-detail-trigger').forEach(item => item.classList.remove('is-active'));
+    document.querySelectorAll(`[data-tour="${key}"]`).forEach(item => item.classList.add('is-active'));
+
+    document.body.classList.add('modal-open');
+  }
+
+  document.querySelectorAll('[data-tour]').forEach(card => {
+    card.classList.add('tour-detail-trigger');
+
+    card.addEventListener('click', function (event) {
+      event.preventDefault();
+      openTourDetail(this.dataset.tour);
+    });
+  });
+const detailClose = document.getElementById('tourDetailClose');
+
+function closeTourDetail() {
+  if (detailSection) {
+    detailSection.classList.remove('is-open');
+  } 
+
+  document.body.classList.remove('modal-open');
+}
+
+if (detailClose) {
+  detailClose.addEventListener('click', closeTourDetail);
+}
+
+if (detailSection) {
+  detailSection.addEventListener('click', function (event) {
+    if (event.target === detailSection) {
+      closeTourDetail();
+    }
+  });
+}
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeTourDetail();
+  }
+});
+const requestModal = document.getElementById('requestModal');
+const requestOpenButtons = document.querySelectorAll('[data-request-open]');
+const requestCloseButtons = document.querySelectorAll('[data-request-close]');
+
+function openRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.add('is-open');
+  requestModal.setAttribute('aria-hidden', 'false');
+  document.body.classList.add('request-modal-open');
+}
+
+function closeRequestModal() {
+  if (!requestModal) return;
+  requestModal.classList.remove('is-open');
+  requestModal.setAttribute('aria-hidden', 'true');
+  document.body.classList.remove('request-modal-open');
+}
+
+requestOpenButtons.forEach(button => {
+  button.addEventListener('click', function (event) {
+    event.preventDefault();
+    openRequestModal();
+  });
+});
+
+requestCloseButtons.forEach(button => {
+  button.addEventListener('click', closeRequestModal);
+});
+
+document.addEventListener('keydown', function (event) {
+  if (event.key === 'Escape') {
+    closeRequestModal();
+  }
+});
+</script>
+</body>
+</html>
