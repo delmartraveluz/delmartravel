@@ -2825,4 +2825,149 @@ body.request-modal-open {
   .about-photo-badge span {
     font-size: 11px;
   }
+}/* HERO MOBILE VIDEO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-video-mobile {
+  display: none;
+}
+
+.hero-bg {
+  z-index: 0;
+}
+
+.shade {
+  z-index: 1;
+}
+
+.site-header,
+.hero-content,
+.scroll {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 760px) {
+  .hero-video-mobile {
+    display: block;
+  }
+
+  .hero-bg {
+    display: none;
+  }
+}/* HERO BACKGROUND VIDEO */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-bg {
+  display: none !important;
+}
+
+.shade {
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 18, 35, .58) 0%,
+    rgba(5, 18, 35, .34) 36%,
+    rgba(5, 18, 35, .14) 62%,
+    rgba(5, 18, 35, .04) 100%
+  ) !important;
+}
+
+.site-header,
+.hero-content,
+.scroll {
+  position: relative;
+  z-index: 3;
+}/* HERO VIDEO DESKTOP + MOBILE */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-video-desktop {
+  display: block;
+}
+
+.hero-video-mobile {
+  display: none;
+}
+
+.hero-bg {
+  display: none !important;
+}
+
+.shade {
+  z-index: 1;
+  background: linear-gradient(
+    90deg,
+    rgba(5, 18, 35, .48) 0%,
+    rgba(5, 18, 35, .24) 36%,
+    rgba(5, 18, 35, .08) 62%,
+    rgba(5, 18, 35, .02) 100%
+  ) !important;
+}
+
+.site-header,
+.hero-content,
+.scroll {
+  position: relative;
+  z-index: 3;
+}
+
+@media (max-width: 760px) {
+  .hero-video-desktop {
+    display: none !important;
+  }
+
+  .hero-video-mobile {
+    display: block !important;
+  }
+
+  .shade {
+    background: linear-gradient(
+      180deg,
+      rgba(5, 18, 35, .58) 0%,
+      rgba(5, 18, 35, .28) 42%,
+      rgba(5, 18, 35, .48) 100%
+    ) !important;
+  }
 }
